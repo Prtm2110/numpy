@@ -323,7 +323,7 @@ the primary thing that must be changed to create your own ufunc.
             }
         }
 
-        /* This a pointer to the above function */
+        /* This is a pointer to the above function */
         PyUFuncGenericFunction funcs[1] = {&double_logit};
 
         /* These are the input and return dtypes of logit.*/
@@ -697,7 +697,7 @@ as well as all other properties of a ufunc.
             }
         }
 
-        /*This a pointer to the above function*/
+        /*This is a pointer to the above function*/
         PyUFuncGenericFunction funcs[1] = {&double_logitprod};
 
         /* These are the input and return dtypes of logit.*/
