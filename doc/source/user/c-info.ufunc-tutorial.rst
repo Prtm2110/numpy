@@ -74,7 +74,7 @@ For comparison and general edification of the reader we provide
 a simple implementation of a C extension of ``logit`` that uses no
 numpy.
 
-To do this we need three files. The first is the C file which contains
+To do this we need three files. The first is the C file, ``spammodule.c``, which contains
 the actual code, and the others are two project files that describe
 how to create the module.
 
@@ -262,7 +262,8 @@ Example NumPy ufunc for one dtype
 
 For simplicity we give a ufunc for a single dtype, the ``'f8'``
 ``double``. As in the previous section, we first give the ``.c`` file
-and then the files used to create a ``npufunc`` module containing the ufunc.
+(``single_type_logit.c``) and then the project files used to build the ``npufunc``
+module containing the ufunc.
 
 The place in the code corresponding to the actual computations for
 the ufunc are marked with ``/* BEGIN main ufunc computation */`` and
